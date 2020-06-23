@@ -3,19 +3,19 @@
     <div class="nav-logo-img">
       <div class="navbar-brand">
         <nuxt-link to="/">
-        <img
-          class="img-responsive img-large"
-          src=".././assets/images/logo3.png"
-          alt="logo"
-          style="width: 120px;"
-        />
-        <img
-          class="img-responsive img-small"
-          src=".././assets/images/logo3.png"
-          alt="logo"
-          style="width: 100px;"
-        />
-        </nuxt-link> 
+          <img
+            class="img-responsive img-large"
+            src=".././assets/images/logo3.png"
+            alt="logo"
+            style="width: 120px;"
+          />
+          <img
+            class="img-responsive img-small"
+            src=".././assets/images/logo3.png"
+            alt="logo"
+            style="width: 100px;"
+          />
+        </nuxt-link>
       </div>
     </div>
     <button
@@ -27,7 +27,6 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
       style="background-color:transparent;"
-    
     >
       <img src=".././assets/images/menu.png" />
     </button>
@@ -38,26 +37,44 @@
           <nuxt-link to="/" class="text-lg active" exact>Home</nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link to="/service" exact>About</nuxt-link>
+          <nuxt-link to="/service" exact>Services</nuxt-link>
         </li>
-         <li class="nav-item">
+        <li class="nav-item">
           <nuxt-link to="/albums" exact>Albums</nuxt-link>
         </li>
         <li class="nav-item">
           <nuxt-link to="/contact" exact>Contact us</nuxt-link>
         </li>
       </ul>
-        <div class="text-center btn-col">
-          <!-- <nuxt-link> -->
-            <md-button class="md-raised md-primary btn-color">Sign in</md-button>
-          <!-- </nuxt-link> -->
+      <div class="text-center btn-col">
+        <div class="social_icon text-right">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
         </div>
+        <!-- <nuxt-link> -->
+        <!-- <md-button class="md-raised md-primary btn-color">Sign in</md-button> -->
+        <!-- </nuxt-link> -->
+      </div>
     </div>
   </nav>
 </template>
 
 <style scoped>
-
 .navbar-brand {
   padding: 0;
 }
@@ -65,7 +82,7 @@
   font-size: 1.5em;
   color: #000;
 }
-.navbar-brand a:hover{
+.navbar-brand a:hover {
   text-decoration: none;
 }
 nav {
@@ -152,7 +169,7 @@ nav {
   justify-content: center;
 }
 .nav-logo-img {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 nav.shrink .nav-logo-img {
 }
@@ -238,26 +255,52 @@ nav ul li:not(:first-of-type) {
   top: -5px;
   font-size: 12px;
 }
-.navbar-brand:after{
-    content: '';
-    position: absolute;
-    z-index: -1;
-    width: 410px;
-    height: 410px;
-    background: #d21c5e;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    left: 2%;
-    top: 2%;
+.navbar-brand:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 410px;
+  height: 410px;
+  background: #d21c5e;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  left: 2%;
+  top: 2%;
 }
-.img-large{
-    display: none;
-    width: 120px;
-    position: relative;
-    left: -60px;
+.img-large {
+  display: none;
+  width: 120px;
+  position: relative;
+  left: -60px;
 }
-.img-small{
-    display: inline-block;
+.img-small {
+  display: inline-block;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+.social_icon ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.social_icon ul li a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #41393a;
+  font-size: 14px;
+  margin-left: 6px;
 }
 
 @media (max-width: 1050px) and (min-width: 991px) {
@@ -333,16 +376,16 @@ nav ul li:not(:first-of-type) {
     padding: 5px 30px;
   }
 }
-@media (min-width: 992px){
-    .navbar-expand-lg .navbar-toggler {
-        display: block;
-    }
-    .img-large{
-        display: inline-block;
-    }
-    .img-small{
-        display: none;
-    }
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: block;
+  }
+  .img-large {
+    display: inline-block;
+  }
+  .img-small {
+    display: none;
+  }
 }
 @media screen and (min-width: 991px) and (max-width: 1050px) {
   nav ul li {
@@ -354,30 +397,20 @@ nav ul li:not(:first-of-type) {
 <script>
 export default {
   data() {
-    return {
-
-    };
+    return {};
   },
 
   head() {
-    return {
-      
-    };
+    return {};
   },
 
   created() {},
 
-  mounted() {
-    
-  },
+  mounted() {},
 
-  unmounted() {
-  
-  },
+  unmounted() {},
 
-  methods: {
-   
-  },
+  methods: {},
 
   components: {
     // Logo
