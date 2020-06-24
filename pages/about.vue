@@ -1,22 +1,22 @@
 <template>
   <div>
     <!-- Navbar section start -->
-      <Navbar2 />
+      <Navbar3 />
     <!-- Navbar section end -->
     <div class="main-container">
-      <Banner2 />
+      <Banner />
     </div>
   </div>
 </template>
 
 <script>
-import Banner2 from '~/components/Banner2.vue'
-import Navbar2 from '~/components/Navbar2.vue'
+import Banner from '~/components/Banner.vue'
+import Navbar3 from '~/components/Navbar3.vue'
 
 export default {
   components: {
-    Navbar2,
-    Banner2,
+    Banner,
+    Navbar3
   },
   data () {
     return {
@@ -43,5 +43,3 @@ div{
 
 
 </style>
-
-

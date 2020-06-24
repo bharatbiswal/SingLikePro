@@ -5,12 +5,12 @@
         <div class="parallax-bg" style="background-image:url('../assets/images/background-05.jpg');"></div>
 
         <div class="swiper-slide context-dark swiper-content-bottom" id="animate-section">
-            <div class="logo-style">
+            <!-- <div class="logo-style">
                 <img src="../assets/images/logo.png" alt="">
             </div>
             <div class="menu-style">
                 <img src="../assets/images/menu.png" alt="">
-            </div>
+            </div> -->
             <!-- <a href="https://www.freepik.com/free-photos-vectors/mockup">Mockup psd created by Qeaql-studio - Freepik.com</a>-->
             <div class="parallax-scene container-screen" id="inner-section">
                 <div class="layer container-screen parallax-scene-img-height" data-depth="0.08"> <img src="../assets/images/download-02.png" alt="" class="photo"></div>

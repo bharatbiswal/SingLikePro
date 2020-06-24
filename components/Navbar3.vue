@@ -37,7 +37,13 @@
           <nuxt-link to="/" class="text-lg active" exact>Home</nuxt-link>
         </li>
         <li class="nav-item">
+          <nuxt-link to="/about" exact>About</nuxt-link>
+        </li>
+        <li class="nav-item">
           <nuxt-link to="/service" exact>Services</nuxt-link>
+        </li>
+        <li class="nav-item">
+          <nuxt-link to="/price" exact>Plans</nuxt-link>
         </li>
         <li class="nav-item">
           <nuxt-link to="/albums" exact>Albums</nuxt-link>

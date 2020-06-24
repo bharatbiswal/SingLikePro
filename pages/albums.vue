@@ -7,7 +7,7 @@
 				<p>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some injected humour.</p>
 			</div>
 			
-			<div class="three-d-album-width">
+			<div class="three-d-album-width container">
 				<div class="row">
 
 					<div class="threed-container-wrapper">
@@ -168,14 +168,15 @@ line-height: 40px;
   max-width: 100%;
 }
 
+
 .threed-container-wrapper {
   -webkit-perspective: 2950px;
           perspective: 2950px;
 }
 
 .threed-container-inner {
-  -webkit-transform: translate3d(-11%, -25%, 0) scale(1) rotateX(45deg) rotateY(-5deg) rotateZ(25deg);
-          transform: translate3d(-11%, -25%, 0) scale(1) rotateX(45deg) rotateY(-5deg) rotateZ(25deg);
+  -webkit-transform: translate3d(-10%, -25%, 0) scale(1) rotateX(45deg) rotateY(-5deg) rotateZ(25deg);
+          transform: translate3d(-10%, -25%, 0) scale(1) rotateX(45deg) rotateY(-5deg) rotateZ(25deg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +185,8 @@ line-height: 40px;
 }
 
 .three-d-album-width {
-  width: 122%;
+  /* width: 122%; */
+  max-width: 100%;
   margin-top: 200px;
 }
 
@@ -202,8 +204,8 @@ line-height: 40px;
 }
 
 .three-d-album {
-  /* background-image: url(../../media/background/play_bg.png);
-  background-position: left 93%;
+  /* background-image: url('.././assets/images/play_bg.png');
+  background-position: left 100%;
   background-repeat: no-repeat;
   background-size: auto; */
 }
