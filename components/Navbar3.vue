@@ -36,9 +36,9 @@
         <li class="nav-item active">
           <nuxt-link to="/" class="text-lg active" exact>Home</nuxt-link>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <nuxt-link to="/about" exact>About</nuxt-link>
-        </li>
+        </li> -->
         <li class="nav-item">
           <nuxt-link to="/service" exact>Services</nuxt-link>
         </li>
