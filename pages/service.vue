@@ -7,101 +7,205 @@
         <h3>What We Do</h3>
         <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered</p>
       </div>
-      
+      <!-- Before width 768px -->
 	  	<div class="top-content">
-		  <div class="container">
-        		<div id="carousel-example" class="carousel slide" data-ride="carousel">
-        			<div class="carousel-inner row w-100 mx-auto" role="listbox">
-            			<div class="carousel-item active">
-							<div class="row">
-								<div class="col-12 col-md-6 col-lg-6">
-									<div class="service-view text-center">
-										<div class="serv-image-view">
-											<img src=".././assets/images/service/serv1.jpg" />
-										</div>
-										<div class="serv-content-view">
-											<div class="description">
-											<h5>Voice Recording</h5>
-											<p>
-												Curabitur fermentum vitae eros eu porta. Curabitur et risus egestas,
-												vulputate lacus eget.
-											</p>
-											<md-button class="md-raised md-accent read-btn">Read More</md-button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-6 col-lg-6">
-									 <div class="service-view text-center">
-										<div class="serv-image-view">
-											<img src=".././assets/images/service/serv2.jpg" />
-										</div>
-										<div class="serv-content-view">
-											<div class="description">
-											<h5>Sound Mixing</h5>
-											<p>
-												Curabitur fermentum vitae eros eu porta. Curabitur et risus egestas,
-												vulputate lacus eget.
-											</p>
-											<md-button class="md-raised md-accent read-btn">Read More</md-button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-						<div class="carousel-item">
-							<div class="row">
-								<div class="col-12 col-md-6 col-lg-6">
-									<div class="service-view text-center">
-										<div class="serv-image-view">
-											<img src=".././assets/images/service/serv3.jpg" />
-										</div>
-										<div class="serv-content-view">
-											<div class="description">
-											<h5>Track Mastering</h5>
-											<p>
-												Curabitur fermentum vitae eros eu porta. Curabitur et risus egestas,
-												vulputate lacus eget.
-											</p>
-											<md-button class="md-raised md-accent read-btn">Read More</md-button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-6 col-lg-6">
-									 <div class="service-view text-center">
-										<div class="serv-image-view">
-											<img src=".././assets/images/service/serv4.jpg" />
-										</div>
-										<div class="serv-content-view">
-											<div class="description">
-											<h5>Audio Matching</h5>
-											<p>
-												Curabitur fermentum vitae eros eu porta. Curabitur et risus egestas,
-												vulputate lacus eget.
-											</p>
-											<md-button class="md-raised md-accent read-btn">Read More</md-button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>						
-						</div>
-						
-        			</div>
-        			<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
-        		</div>
-        	</div>
-    	</div>
+        <div class="container">
+              <div id="serviceMaxCarousel" class="carousel slide service-carousel" data-ride="carousel">
+                <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-6 col-sm-6">
+                    <div class="service-view text-center">
+                      <div class="serv-image-view">
+                        <img src=".././assets/images/service/serv1.jpg" />
+                      </div>
+                      <div class="serv-content-view">
+                        <div class="description">
+                        <h5>Voice Recording</h5>
+                        <p>
+                          Curabitur fermentum vitae eros eu porta. Curabitur et risus egestas,
+                          vulputate lacus eget.
+                        </p>
+                        <md-button class="md-raised md-accent read-btn">Read More</md-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6 col-sm-6">
+                    <div class="service-view text-center">
+                      <div class="serv-image-view">
+                        <img src=".././assets/images/service/serv2.jpg" />
+                      </div>
+                      <div class="serv-content-view">
+                        <div class="description">
+                        <h5>Sound Mixing</h5>
+                        <p>
+                          Curabitur fermentum vitae eros eu porta. Curabitur et risus egestas,
+                          vulputate lacus eget.
+                        </p>
+                        <md-button class="md-raised md-accent read-btn">Read More</md-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-6 col-sm-6">
+                    <div class="service-view text-center">
+                      <div class="serv-image-view">
+                        <img src=".././assets/images/service/serv3.jpg" />
+                      </div>
+                      <div class="serv-content-view">
+                        <div class="description">
+                        <h5>Track Mastering</h5>
+                        <p>
+                          Curabitur fermentum vitae eros eu porta. Curabitur et risus egestas,
+                          vulputate lacus eget.
+                        </p>
+                        <md-button class="md-raised md-accent read-btn">Read More</md-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6 col-sm-6">
+                    <div class="service-view text-center">
+                      <div class="serv-image-view">
+                        <img src=".././assets/images/service/serv4.jpg" />
+                      </div>
+                      <div class="serv-content-view">
+                        <div class="description">
+                        <h5>Audio Matching</h5>
+                        <p>
+                          Curabitur fermentum vitae eros eu porta. Curabitur et risus egestas,
+                          vulputate lacus eget.
+                        </p>
+                        <md-button class="md-raised md-accent read-btn">Read More</md-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>						
+              </div>
+              
+                </div>
+                <a class="carousel-control-prev" href="#serviceMaxCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#serviceMaxCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+              </div>
+            </div>
+
+      <!-- Before width 768px -->
+
+       <!-- After width 768px -->
+      <div class="container">
+        <div id="serviceMinCarousel" class="service-min-carousel carousel slide" data-ride="carousel">
+            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                <div class="carousel-item col-md-3 active">
+                  <div class="panel panel-default">
+                      <div class="panel-thumbnail">
+                       <div class="service-view text-center">
+                          <div class="serv-image-view">
+                            <img src=".././assets/images/service/serv1.jpg" />
+                          </div>
+                          <div class="serv-content-view">
+                            <div class="description">
+                            <h5>Voice Recording</h5>
+                            <p>
+                              Curabitur fermentum vitae eros eu porta. Curabitur et risus egestas,
+                              vulputate lacus eget.
+                            </p>
+                            <md-button class="md-raised md-accent read-btn">Read More</md-button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3">
+                  <div class="panel panel-default">
+                      <div class="panel-thumbnail">
+                         <div class="service-view text-center">
+                            <div class="serv-image-view">
+                              <img src=".././assets/images/service/serv2.jpg" />
+                            </div>
+                            <div class="serv-content-view">
+                              <div class="description">
+                              <h5>Sound Mixing</h5>
+                              <p>
+                                Curabitur fermentum vitae eros eu porta. Curabitur et risus egestas,
+                                vulputate lacus eget.
+                              </p>
+                              <md-button class="md-raised md-accent read-btn">Read More</md-button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3">
+                  <div class="panel panel-default">
+                      <div class="panel-thumbnail">
+                        <div class="service-view text-center">
+                          <div class="serv-image-view">
+                            <img src=".././assets/images/service/serv3.jpg" />
+                          </div>
+                          <div class="serv-content-view">
+                            <div class="description">
+                            <h5>Track Mastering</h5>
+                            <p>
+                              Curabitur fermentum vitae eros eu porta. Curabitur et risus egestas,
+                              vulputate lacus eget.
+                            </p>
+                            <md-button class="md-raised md-accent read-btn">Read More</md-button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3">
+                    <div class="panel panel-default">
+                      <div class="panel-thumbnail">
+                          <div class="service-view text-center">
+                            <div class="serv-image-view">
+                              <img src=".././assets/images/service/serv4.jpg" />
+                            </div>
+                            <div class="serv-content-view">
+                              <div class="description">
+                              <h5>Audio Matching</h5>
+                              <p>
+                                Curabitur fermentum vitae eros eu porta. Curabitur et risus egestas,
+                                vulputate lacus eget.
+                              </p>
+                              <md-button class="md-raised md-accent read-btn">Read More</md-button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#serviceMinCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#serviceMinCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+      </div>
+       <!-- After width 768px -->
+</div>
+
     </section>
   </div>
   <!--Service Wrapper End-->
@@ -117,17 +221,17 @@ export default {
   data() {
     return {};
   },
-//   head() {
-//     return {
-//       script:[
-//           {
-//             type: "module",
-//             src: "slide.js"
-//           }
+  // head() {
+  //   return {
+  //     script:[
+  //         {
+  //           type: "module",
+  //           src: "slide.js"
+  //         }
         
-//       ]
-//     };
-//   },
+  //     ]
+  //   };
+  // },
   transition: "slide",
   components: {
     Navbar3
@@ -139,13 +243,13 @@ export default {
 <style scoped>
 .service-section {
   background-color: #f0f0f3;
-  padding: 150px 0;
+  padding: 9rem 0;
   position: relative;
 }
 
 .section-title {
   margin-bottom: 80px;
-  padding: 60px 0;
+  padding: 60px 20px;
   background-color: #000;
   width: 100%;
   text-align: center;
@@ -193,7 +297,7 @@ export default {
   /* font-family: "Satisfy", cursive; */
   color: #fff;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 .service-view {
@@ -223,13 +327,13 @@ export default {
     font-size: 1.5rem;
     font-family: "Satisfy", cursive;
 }
-.left-arrow-style {
+.service-carousel .left-arrow-style, .service-min-carousel .left-arrow-style{
   position: absolute;
   left: 40px;
   top: 20px;
   z-index: 9;
 }
-.left-arrow-style .fa {
+.service-carousel .left-arrow-style .fa, .service-min-carousel .left-arrow-style .fa{
   color: #000;
   font-size: 30px;
   padding: 0px 20px;
@@ -237,14 +341,14 @@ export default {
   border-radius: 50px;
   margin-right: 10px;
 }
-.left-arrow-style a {
+.service-carousel .left-arrow-style a, .service-min-carousel .left-arrow-style a{
   display: flex;
   /* vertical-align: middle; */
   font-size: 14px;
   align-items: center;
   color: #000 !important;
 }
-.left-arrow-style a:hover {
+.service-carousel .left-arrow-style a:hover, .service-min-carousel .left-arrow-style a:hover {
   text-decoration: none;
 }
 
@@ -274,7 +378,7 @@ export default {
     }
   }
 
-.carousel-control-prev{
+.service-carousel .carousel-control-prev, .service-min-carousel .carousel-control-prev{
 	left: -30px;
     width: 50px;
     top: 50%;
@@ -285,7 +389,7 @@ export default {
     border-radius: 50px;
 }
 
-.carousel-control-next{
+.service-carousel .carousel-control-next, .service-min-carousel .carousel-control-next{
 	right: -30px;
     width: 50px;
     top: 50%;
@@ -296,42 +400,106 @@ export default {
     border-radius: 50px;
 }
 
-/*
-    code by Iatek LLC 2018 - CC 2.0 License - Attribution required
-    code customized by Azmind.com
-*/
-@media (min-width: 768px) and (max-width: 991px) {
-    /* Show 4th slide on md if col-md-4*/
-    .carousel-inner .active.col-md-6.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -33.3333%;  /*change this with javascript in the future*/
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
+
+@media (max-width: 768px) {
+  .service-min-carousel{
+    padding: 0 20px;
+  }
+  .service-min-carousel .carousel-control-prev{
+    left: 0;
+  }
+  .service-min-carousel .carousel-control-next{
+    right: 0;
+  }
+  .service-section{
+    padding: 8rem 0 60px;
+  }
+
+
 }
-@media (min-width: 576px) and (max-width: 768px) {
-    /* Show 3rd slide on sm if col-sm-6*/
-    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+
+    #serviceMaxCarousel{
+        display: none;
+    }
+
+
+
+@media (min-width: 768px) {
+
+   #serviceMaxCarousel{
+        display: block;
+    }
+
+    #serviceMinCarousel{
+        display: none;
+    } 
+
+    /* show 3 items */
+    /* .service-min-carousel .carousel-inner .active,
+    .service-min-carousel .carousel-inner .active + .service-min-carousel .carousel-item,
+    .service-min-carousel .carousel-inner .active + .service-min-carousel .carousel-item + 
+    .service-min-carousel .carousel-item,
+    .service-min-carousel .carousel-inner .active + .service-min-carousel .carousel-item + 
+    .service-min-carousel .carousel-item + .service-min-carousel .carousel-item  {
+        display: block;
+    } */
+    
+    #serviceMinCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    #serviceMinCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    #serviceMinCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    #serviceMinCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    #serviceMinCarousel .carousel-inner .carousel-item-next,
+    #serviceMinCarousel .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    #serviceMinCarousel .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
         position: absolute;
         top: 0;
-        right: -50%;  /*change this with javascript in the future*/
+        right: -25%;
         z-index: -1;
         display: block;
         visibility: visible;
     }
-}
-@media (max-width: 576px) {
-    /* Show 3rd slide on sm if col-sm-6*/
-    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+    
+    /* left or forward direction */
+    #serviceMinCarousel .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    #serviceMinCarousel .carousel-item-next.carousel-item-left + .carousel-item,
+    #serviceMinCarousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    #serviceMinCarousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    #serviceMinCarousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    #serviceMinCarousel .carousel-inner .carousel-item-prev.carousel-item-right {
         position: absolute;
         top: 0;
-        right: -50%;  /*change this with javascript in the future*/
+        left: 0;
         z-index: -1;
         display: block;
         visibility: visible;
     }
+    
+    /* right or prev direction */
+    #serviceMinCarousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    #serviceMinCarousel .carousel-item-prev.carousel-item-right + .carousel-item,
+    #serviceMinCarousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    #serviceMinCarousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    #serviceMinCarousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
 }
 
 

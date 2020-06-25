@@ -7,7 +7,6 @@
             class="img-responsive img-large"
             src=".././assets/images/logo3.png"
             alt="logo"
-            style="width: 120px;"
           />
           <!-- <img
             class="img-responsive img-small"
@@ -311,6 +310,7 @@ li {
 }
  .img-large {
     display: inline-block;
+    width: 120px;
   }
   .navbar-item-padding{
     padding-left: 50px;
@@ -391,7 +391,14 @@ li {
   .img-large {
     position: static;
     left: 0px;
+    width: 100px;
   }
+  .navbar-brand::after {
+    width: 350px;
+    height: 350px;
+    left: 1%;
+    top: 1%;
+}
 
 }
 @media (max-width: 500px) {
