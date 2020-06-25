@@ -9,17 +9,17 @@
             alt="logo"
             style="width: 120px;"
           />
-          <img
+          <!-- <img
             class="img-responsive img-small"
             src=".././assets/images/logo3.png"
             alt="logo"
             style="width: 100px;"
-          />
+          /> -->
         </nuxt-link>
       </div>
     </div>
     <button
-      class="navbar-toggler d-none"
+      class="navbar-toggler"
       type="button"
       data-toggle="collapse"
       data-target="#navbarTogglerDemo02"
@@ -31,7 +31,7 @@
       <img src=".././assets/images/menu.png" />
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="padding-left: 50px;">
+    <div class="collapse navbar-collapse navbar-item-padding" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <nuxt-link to="/" class="text-lg active" exact>Home</nuxt-link>
@@ -307,7 +307,14 @@ li {
   border: 1px solid #41393a;
   font-size: 14px;
   margin-left: 6px;
+  padding: 0;
 }
+ .img-large {
+    display: inline-block;
+  }
+  .navbar-item-padding{
+    padding-left: 50px;
+  }
 
 @media (max-width: 1050px) and (min-width: 991px) {
   .navbar a {
@@ -343,11 +350,11 @@ li {
     border-bottom-color: #999;
     padding: 8px 10px;
   }
-  .navbar .nuxt-link-active,
+  .navbar .navbar-nav .nuxt-link-active,
   .navbar .navbar-nav a:hover,
   .navbar .navbar-nav a:active,
   .navbar .navbar-nav a:focus {
-    background-color: rgba(185, 163, 104, 0.43922);
+    background-color: rgba(211, 29, 94, 0.5);
     color: #fff !important;
     font-weight: 500;
     text-decoration: none;
@@ -359,6 +366,12 @@ li {
     } */
   .btn-color {
     margin: 15px 0;
+  }
+   .navbar-item-padding{
+    padding-left: 0px;
+  }
+  .social_icon{
+    padding: 10px 0;
   }
 }
 @media (max-width: 768px) {
@@ -375,6 +388,11 @@ li {
     margin-left: 20px;
     margin-top: 15px;
   }
+  .img-large {
+    position: static;
+    left: 0px;
+  }
+
 }
 @media (max-width: 500px) {
   .navbar-shrink,
@@ -383,15 +401,15 @@ li {
   }
 }
 @media (min-width: 992px) {
-  .navbar-expand-lg .navbar-toggler {
+  /* .navbar-expand-lg .navbar-toggler {
     display: block;
-  }
-  .img-large {
+  } */
+  /* .img-large {
     display: inline-block;
-  }
-  .img-small {
+  } */
+  /* .img-small {
     display: none;
-  }
+  } */
 }
 @media screen and (min-width: 991px) and (max-width: 1050px) {
   nav ul li {
