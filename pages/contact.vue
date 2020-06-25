@@ -12,7 +12,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
             <div class="sing-address">
               <div class="icon">
                 <svg
@@ -43,7 +43,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt_mobile--50">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt_mobile--50 mb-5">
             <div class="sing-address">
               <div class="icon">
                 <svg
@@ -74,7 +74,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt_md--50 mt_sm--50">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt_md--50 mt_sm--50 mb-5">
             <div class="sing-address">
               <div class="icon">
                 <svg
@@ -231,6 +231,7 @@
   font-family: "Satisfy", cursive;
   color: #fff;
   font-size: 20px;
+  padding: 0 20%;
 }
 .contact-form {
   padding: 50px 0;

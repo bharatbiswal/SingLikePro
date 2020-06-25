@@ -158,15 +158,20 @@
 
 
 <style scoped>
-.section-title p{
-    padding: 0px 28%;
-    font-size: 18px;
-}
+/* .section-title p{
+    /* padding: 0px 28%;
+    font-size: 18px; 
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+} */
 
 .section-title {
-  margin-bottom: 50px;
-  padding: 60px 0;
+  margin-bottom: 80px;
+  padding: 60px 50px;
   background-color: #000;
+  width: 100%;
+  text-align: center;
 }
 
 .section-title h3 {
@@ -212,11 +217,17 @@
   color: #fff;
   font-size: 20px;
   line-height: 24px;
+  padding: 0 20%;
 }
 .price-section {
+  background-color: #f0f0f3;
+  padding: 9rem 0;
+  position: relative;
+}
+/* .price-section {
   background-color: #fff;
   padding: 150px 0 0;
-}
+} */
 .prices-card {
   position: relative;
   width: 100%;
@@ -457,9 +468,18 @@
   padding-right: 15px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .prices-slider .tt-slide {
     width: 100%;
+  }
+  .price-section{
+    padding: 8rem 0 60px;
+  }
+  .section-title {
+    padding: 60px 50px;
+  }
+  .section-title p{
+    padding: 0;
   }
 }
 

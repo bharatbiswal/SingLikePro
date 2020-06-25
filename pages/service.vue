@@ -298,6 +298,7 @@ export default {
   color: #fff;
   font-size: 20px;
   line-height: 30px;
+  padding: 0 20%;
 }
 
 .service-view {
@@ -413,6 +414,9 @@ export default {
   }
   .service-section{
     padding: 8rem 0 60px;
+  }
+  .section-title p{
+    padding: 0;
   }
 
 

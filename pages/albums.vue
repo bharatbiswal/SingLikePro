@@ -97,14 +97,18 @@ transition: 'bounce',
 
 <style scoped>
 .three-d-album {
-  padding: 150px 0 0;
+  padding: 9rem 0 0;
+  position: relative;
 }
 
 .section-title {
-  margin-bottom: 50px;
-  padding: 60px 0;
+  margin-bottom: 80px;
+  padding: 60px 50px;
   background-color: #000;
+  width: 100%;
+  text-align: center;
 }
+
 
 .section-title h3 {
   font-family: "Satisfy", cursive;
@@ -148,6 +152,7 @@ line-height: 40px;
         color: #fff;
         font-size: 20px;
         line-height: 24px;
+        padding: 0 20%;
 }
 .single-3d {
   -webkit-box-flex: 0;
@@ -260,7 +265,7 @@ line-height: 40px;
   }
   .three-d-album-width {
     width: 100%;
-    margin-top: 170px;
+    margin-top: 50px;
     padding: 0 21px;
   }
 }
@@ -270,7 +275,8 @@ line-height: 40px;
     display: none;
   }
   .three-d-album {
-    padding-bottom: 180px;
+     padding: 8rem 0;
+    /* padding-bottom: 180px; */
   }
 }
 
@@ -289,7 +295,7 @@ line-height: 40px;
   }
   .three-d-album-width {
     width: 100%;
-    margin-top: 154px;
+    /* margin-top: 154px; */
     padding: 0 15px;
   }
   .empty-space {
@@ -306,6 +312,13 @@ line-height: 40px;
   .three-d-album .more-album {
     margin-top: 0;
   }
+  .section-title p{
+    padding: 0;
+  }
+   .three-d-album {
+     padding: 8rem 0;
+    /* padding-bottom: 180px; */
+  }
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
@@ -315,11 +328,12 @@ line-height: 40px;
   }
   .three-d-album-width {
     width: 100%;
-    margin-top: 170px;
+    margin-top: 50px;
     padding: 0 15px;
   }
   .three-d-album {
     background-image: none;
+    padding: 8rem 0;
   }
   .single-3d {
     -ms-flex: 0 0 46%;
@@ -334,12 +348,15 @@ line-height: 40px;
     display: none;
   }
   .three-d-album-width {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .three-d-album .more-album {
     left: 10px;
     margin-top: 0;
     right: 0;
+  }
+  .section-title p{
+    padding: 0;
   }
 }
 .section-title.style-four {
@@ -363,8 +380,8 @@ line-height: 40px;
 }
 
 .section-title.style-four p {
-  padding: 0px 28%;
-  font-size: 18px;
+  /* padding: 0px 20px;
+  font-size: 18px; */
 }
 
  .bounce-enter-active {
