@@ -9,26 +9,26 @@
                     <h3>Sing Like Pro</h3>
                 </div>
                 <div class="right-arrow-style">
-                    <nuxt-link to="/home4" class="sing_right">
+                    <nuxt-link to="/about" class="sing_right">
                         Click to Enter
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                     </nuxt-link>
                 </div>
                 <div class="container">
                     <div class="row text-md-left">
-                        <div class="col-md-10 col-xl-7">
+                        <div class="col-md-10 col-xl-7 col-sm-12 col-xs-12">
                             <div class="offer-box">
-                                <div class="offer-box-subheading text-md-right" style="color:#fff;">Every Day</div>
+                                <div class="offer-box-subheading" style="color:#fff;">Every Day</div>
                                 <div class="offer-box-title">unlimited</div>
                             </div>
                         </div>
                     </div>
-                     <div class="row text-md-left row-padding">
-                        <div class="offset-xl-5 col-md-10 col-xl-7">
-                            <div class="offer-box" style="padding:0">
-                                <div class="paunch-line-style text-left text-wrapper">Dream It,</div>
-                                <div class="paunch-line-style text-center text-wrapper2">Believe It,</div>
-                                <div class="paunch-line-style text-right text-wrapper3">Achieve It,</div>
+                     <div class="row row-padding">
+                        <div class="col-md-12 col-xl-12">
+                            <div class="offer-box offer-text-box" style="padding:0">
+                                <div class="paunch-line-style text-wrapper">Dream It,</div>
+                                <div class="paunch-line-style text-wrapper2">Believe It,</div>
+                                <div class="paunch-line-style text-wrapper3">Achieve It,</div>
                             </div>
                         </div>
                     </div>
@@ -120,19 +120,22 @@
    
     .text-wrapper{
         animation: 1s ease-out 0s 1 slideInFromTop;
+        text-align: left;
     }
     .text-wrapper2{
         animation: 1.5s ease-out 0s 1 slideInFromLeft;
+        text-align: center;
     }
     .text-wrapper3{
         animation: 2s ease-out 0s 1 slideInFromRight;
+        text-align: right;
     }
    
-    @media (min-width: 1200px){
+    /* @media (min-width: 1200px){ */
         .row-padding {
             margin-top: 60px;
         }
-    }
+    /* } */
     @keyframes slideInFromLeft {
         0% {
             transform: translateX(-50%);
@@ -181,6 +184,7 @@
 .offer-box-subheading {
 	font-family: "Herr Von Muellerhoff", cursive;
 	font-size: 46px;
+    text-align: right;
 }
 
 .offer-box-title {
@@ -188,7 +192,7 @@
 	text-transform: uppercase;
 	letter-spacing: .2em;
 	color: #d21c5e;
-	font-size: 56px;
+	font-size: 10vw;
 }
 
 .offer-box-subtitle {
@@ -201,9 +205,9 @@
 	.offer-box-subheading {
 		font-size: 60px;
 	}
-	.offer-box-title {
+	/* .offer-box-title {
 		font-size: 100px;
-	}
+	} */
 	.offer-box-subtitle {
 		font-size: 52px;
 	}
@@ -212,9 +216,10 @@
 @media (min-width: 768px) {
 	.offer-box-subheading {
 		font-size: 66px;
+         /* text-align: center; */
 	}
 	.offer-box-title {
-		font-size: 115px;
+		/* font-size: 115px; */
 		animation: neon-offer 1.5s ease-in-out infinite alternate;
 	}
 	.offer-box-subtitle {
@@ -227,11 +232,55 @@
 		font-size: 85px;
 	}
 	.offer-box-title {
-		font-size: 150px;
+		font-size: 10vw;
 	}
 	.offer-box-subtitle {
 		font-size: 72px;
 	}
+}
+
+@media (max-width: 992px) {
+	.offer-box-subheading {
+		text-align: center;
+	}
+    .offer-box{
+        text-align: center;
+        padding: 60px 0 40px;
+    }
+    .left-text-style{
+        display:none;
+    }
+}
+
+@media (max-width: 768px) {
+    .offer-box{
+        text-align: center;
+        padding: 150px 0 40px;
+    }
+    .offer-box-title{
+        animation: neon-offer-data-v-fe78b908 1.5s ease-in-out infinite alternate;
+    }
+    .right-arrow-style{
+        top:40px;
+    }
+    .offer-box .paunch-line-style{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .offer-box .paunch-line-style{
+        font-size: 50px;
+    }
+    .text-wrapper{
+        text-align: center;
+    }
+    .text-wrapper2{
+        text-align: center;
+    }
+    .text-wrapper3{
+        text-align: center;
+    }
 }
 
 @keyframes neon-offer {
@@ -241,6 +290,12 @@
 	to {
 		text-shadow: 0 0 1px rgba(255, 255, 255, 0.3), 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(210, 28, 94, 0.5), 0 0 15px rgba(210, 28, 94, 0.5), 0 0 20px rgba(210, 28, 94, 0.5), 0 0 30px rgba(210, 28, 94, 0.5);
 	}
+}
+
+.offer-text-box{
+    max-width: 750px;
+    padding: 50px 0;
+    margin-left: auto;
 }
 
   
