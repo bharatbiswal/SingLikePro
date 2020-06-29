@@ -74,7 +74,7 @@
                 </div>
             <div class="row">
                 <!-- <div class="col-12"> -->
-                    <div class="col-md-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="client-view">
                             <div class="client-photo"> 
                                 <span>
@@ -84,7 +84,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="client-view">
                             <div class="client-photo"> 
                                 <span>
@@ -94,7 +94,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="client-view">
                             <div class="client-photo"> 
                                 <span>
@@ -104,7 +104,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="client-view">
                             <div class="client-photo"> 
                                 <span>
