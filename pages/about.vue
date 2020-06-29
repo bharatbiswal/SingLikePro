@@ -37,11 +37,19 @@ keyboard_arrow_left
 				
 				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
 					<span class="material-icons">
-keyboard_arrow_right
-</span>
+						keyboard_arrow_right
+					</span>
 					<span class="sr-only">Next</span>
 				</a>
 				</div>
+				<div class="button-sec">
+						<button role="button" class="download-btn btn mx-2" @click="clickOnAppStore">
+							<img alt="ios app" class="app-store-img" src=".././assets/images/badge/app-store.svg">
+						</button> 
+						<button role="button" class="download-btn btn mx-2" @click="clickOnGooglePlay">
+							<img alt="android app" class="app-store-img" src=".././assets/images/badge/google-playstore.png">
+						</button>
+					</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<svg width="506" height="506" class="about-svg" viewBox="0 0 506 506" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -92,6 +100,29 @@ export default {
       
     };
   },
+
+  methods:{
+	  clickOnAppStore(){
+		// this.$swal({
+        //   text: "Coming Soon",
+        //   icon: "info",
+        // })
+		this.$swal({
+          text: "Coming Soon !"
+        });
+	  },
+
+	  clickOnGooglePlay(){
+		// this.$swal({
+        //   text: "Coming Soon",
+        //   icon: "info",
+        // })
+		this.$swal({
+          text: "Coming Soon !"
+        });
+	  }
+  },
+
  transition: 'bounce',
   components: {
     Navbar3
@@ -116,7 +147,7 @@ export default {
 	.content-col{
 		justify-content: center;
 		align-items: center;
-		display: flex;
+		/* display: flex; */
 	}
 	.about-carousel .carousel-item{
 		margin-top: 50px;
@@ -234,6 +265,21 @@ export default {
   width: 100%;
   max-width: 506px;
 }
+.download-btn{
+	background-color: transparent;
+	border:none;
+	padding: 0;
+	outline: none;
+}
+.download-btn:hover, .download-btn:active, .download-btn:focus{
+	background-color: transparent;
+	border:transparent;
+	outline: none;
+}
+.download-btn .app-store-img{
+	height: 50px;
+	width: auto;
+}
 
 .bounce-enter-active {
         animation: bounce-in .8s;
@@ -252,6 +298,12 @@ export default {
         100% { transform: scale(0) }
     }
     
+	@media (max-width:992px) and (min-width:768px) {
+		.download-btn .app-store-img {
+			height: 40px;
+			width: 120px;
+		}
+	}
 
     @media (max-width:768px) {
       .banner-section{
@@ -267,6 +319,14 @@ export default {
       .about-carousel .carousel-item{
         padding: 0 20px;
       }
+	  .button-sec{
+		margin: 20px auto 30px;
+		text-align: center;
+	  }
+	  .download-btn .app-store-img {
+			height: 50px;
+			width: auto;
+		}
     }
 
 </style>

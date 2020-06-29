@@ -47,6 +47,9 @@
         <li class="nav-item">
           <nuxt-link to="/albums" exact>Albums</nuxt-link>
         </li>
+         <li class="nav-item">
+          <nuxt-link to="/clients" exact>Clients</nuxt-link>
+        </li>
         <li class="nav-item">
           <nuxt-link to="/contact" exact>Contact us</nuxt-link>
         </li>

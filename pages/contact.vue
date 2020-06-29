@@ -15,25 +15,21 @@
           <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
             <div class="sing-address">
               <div class="icon">
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
-                  <path
-                    d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"
-                  />
-                </svg>
+                <svg 
+                stroke="currentColor"
+                fill="none"
+                stroke-width="1"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="1em" 
+                height="1em" 
+                xmlns="http://www.w3.org/2000/svg" 
+                fill-rule="evenodd" clip-rule="evenodd">
+                <path d="M8.26 1.289l-1.564.772c-5.793 3.02 2.798 20.944 9.31 20.944.46 0 .904-.094 1.317-.284l1.542-.755-2.898-5.594-1.54.754c-.181.087-.384.134-.597.134-2.561 0-6.841-8.204-4.241-9.596l1.546-.763-2.875-5.612zm7.746 22.711c-5.68 0-12.221-11.114-12.221-17.832 0-2.419.833-4.146 2.457-4.992l2.382-1.176 3.857 7.347-2.437 1.201c-1.439.772 2.409 8.424 3.956 7.68l2.399-1.179 3.816 7.36s-2.36 1.162-2.476 1.215c-.547.251-1.129.376-1.733.376"/></svg>
               </div>
               <div class="inner">
-                <h4 class="title">Contact With Phone Number</h4>
+                <!-- <h4 class="title">Contact With Phone Number</h4> -->
                 <p>
                   <a href="tel:+057 254 365 456">+057 254 365 456</a>
                 </p>
@@ -64,7 +60,7 @@
                 </svg>
               </div>
               <div class="inner">
-                <h4 class="title">Email Address</h4>
+                <!-- <h4 class="title">Email Address</h4> -->
                 <p>
                   <a href="mailto:admin@gmail.com">admin@gmail.com</a>
                 </p>
@@ -93,7 +89,7 @@
                 </svg>
               </div>
               <div class="inner">
-                <h4 class="title">Location</h4>
+                <!-- <h4 class="title">Location</h4> -->
                 <p>
                   5678 Bangla Main Road,
                   <br />GBnagla, example 54786
@@ -157,6 +153,8 @@
   border-radius: 10px;
   background: #fff;
   padding: 54px 40px 50px;
+  max-height: 170px;
+  height: 170px;
 }
 .sing-address .icon {
   border: 1px solid #ebebeb;

@@ -29,6 +29,15 @@
                                 <div class="paunch-line-style text-wrapper">Dream It,</div>
                                 <div class="paunch-line-style text-wrapper2">Believe It,</div>
                                 <div class="paunch-line-style text-wrapper3">Achieve It,</div>
+
+                                <div class="button-sec">
+                                    <button role="button" class="download-btn btn mx-2" @click="clickOnAppStore">
+                                        <img alt="ios app" class="app-store-img" src=".././assets/images/badge/app-store.svg">
+                                    </button> 
+                                    <button role="button" class="download-btn btn mx-2" @click="clickOnGooglePlay">
+                                        <img alt="android app" class="app-store-img" src=".././assets/images/badge/google-playstore.png">
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -133,7 +142,7 @@
    
     /* @media (min-width: 1200px){ */
         .row-padding {
-            margin-top: 60px;
+            margin-top: 20px;
         }
     /* } */
     @keyframes slideInFromLeft {
@@ -200,6 +209,25 @@
 	text-transform: uppercase;
 	font-size: 30px;
 }
+.button-sec{
+    margin-top:20px;
+    text-align: right;
+}
+.download-btn{
+	background-color: transparent;
+	border:none;
+	padding: 0;
+	outline: none;
+}
+.download-btn:hover, .download-btn:active, .download-btn:focus{
+	background-color: transparent;
+	border:transparent;
+	outline: none;
+}
+.download-btn .app-store-img{
+	height: 50px;
+	width: auto;
+}
 
 @media (min-width: 576px) {
 	.offer-box-subheading {
@@ -265,6 +293,10 @@
     }
     .offer-box .paunch-line-style{
         font-size: 60px;
+    }
+    .button-sec{
+        margin-top:30px;
+        text-align: center;
     }
 }
 
@@ -334,7 +366,25 @@ export default {
   },
 
   methods: {
-   
+    clickOnAppStore(){
+		// this.$swal({
+        //   text: "Coming Soon",
+        //   icon: "info",
+        // })
+		this.$swal({
+          text: "Coming Soon !"
+        });
+	},
+
+    clickOnGooglePlay(){
+    // this.$swal({
+    //   text: "Coming Soon",
+    //   icon: "info",
+    // })
+        this.$swal({
+            text: "Coming Soon !"
+        });
+    }
   },
 
   components: {
