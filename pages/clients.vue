@@ -74,7 +74,7 @@
                 </div>
             <div class="row">
                 <!-- <div class="col-12"> -->
-                    <div class="col-3">
+                    <div class="col-md-3 col-md-6 col-sm-12">
                         <div class="client-view">
                             <div class="client-photo"> 
                                 <span>
@@ -84,7 +84,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-md-3 col-md-6 col-sm-12">
                         <div class="client-view">
                             <div class="client-photo"> 
                                 <span>
@@ -94,7 +94,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-md-3 col-md-6 col-sm-12">
                         <div class="client-view">
                             <div class="client-photo"> 
                                 <span>
@@ -104,7 +104,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-md-3 col-md-6 col-sm-12">
                         <div class="client-view">
                             <div class="client-photo"> 
                                 <span>
@@ -419,10 +419,6 @@ export default {
     
 }
 
-
-
-
-
 .bounce-enter-active {
   animation: bounce-in 0.8s;
 }
@@ -451,4 +447,34 @@ export default {
     transform: scale(0);
   }
 }
+
+@media (max-width:991px) {
+    .follow-grid-item{
+        width: 44%;
+        display: inline-block;
+        text-align: center;
+        margin: 15px 0px;
+    }
+    .client-photo{
+        margin: 20px 0;
+    }
+    
+    .client-section {
+        padding: 8rem 0 0;
+        position: relative;
+    }
+    .section-title p{
+        padding: 0 10%;
+    }
+}
+
+
+@media (max-width:576px) {
+    .client-photo{
+        right: 0px;
+    }
+}
+
+
+
 </style>
