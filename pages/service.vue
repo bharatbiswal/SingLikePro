@@ -1,7 +1,7 @@
 <template>
   <!--Service Wrapper Start-->
   <div>
-    <Navbar3 style="background-color:#000;" />
+    <Navbar style="background-color:#000;" />
     <section class="service-section" id="service">
       <div class="section-title style-four text-center">
         <h3>What We Do</h3>
@@ -211,7 +211,7 @@
   <!--Service Wrapper End-->
 </template>
 <script>
-import Navbar3 from "~/components/Navbar3.vue";
+import Navbar from "~/components/Navbar.vue";
 import Vue from "vue";
 import VueMaterial from "vue-material";
 import "vue-material/dist/vue-material.min.css";
@@ -234,7 +234,7 @@ export default {
   // },
   transition: "slide",
   components: {
-    Navbar3
+    Navbar
   }
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar3 style="background-color:#000;" />
+    <Navbar style="background-color:#000;" />
     <section class="client-section">
       <div class="section-title style-four">
         <h3>Follow Us</h3>
@@ -123,7 +123,7 @@
 </template>
 
 <script>
-import Navbar3 from "~/components/Navbar3.vue";
+import Navbar from "~/components/Navbar.vue";
 import Vue from "vue";
 import VueMaterial from "vue-material";
 import "vue-material/dist/vue-material.min.css";
@@ -135,7 +135,7 @@ export default {
   },
   transition: "bounce",
   components: {
-    Navbar3
+    Navbar
   }
 };
 </script>

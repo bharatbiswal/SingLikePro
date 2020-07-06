@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar3 style="background-color:#000" />
+    <Navbar style="background-color:#000" />
     <div class="sing-contact-top-area ptb--120 bg_color--5">
       <div class="container">
         <div class="row">
@@ -292,7 +292,7 @@
 </style>
 
 <script>
-import Navbar3 from "~/components/Navbar3.vue";
+import Navbar from "~/components/Navbar.vue";
 import Vue from "vue";
 import VueMaterial from "vue-material";
 import "vue-material/dist/vue-material.min.css";
@@ -304,7 +304,7 @@ export default {
   },
   transition: "page",
   components: {
-    Navbar3
+    Navbar
   }
 };
 </script>

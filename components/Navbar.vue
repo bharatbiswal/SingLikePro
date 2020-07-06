@@ -2,14 +2,19 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="nav-logo-img">
       <div class="navbar-brand">
-        <!-- <a href="/"> -->
-        <img
-          class="img-responsive"
-          src=".././assets/images/logo.png"
-          alt="logo"
-          style="display:inline-block; width: 150px;"
-        />
-        <!-- </a>  -->
+        <nuxt-link to="/">
+          <img
+            class="img-responsive img-large"
+            src=".././assets/images/logo3.png"
+            alt="logo"
+          />
+          <!-- <img
+            class="img-responsive img-small"
+            src=".././assets/images/logo3.png"
+            alt="logo"
+            style="width: 100px;"
+          /> -->
+        </nuxt-link>
       </div>
     </div>
     <button
@@ -18,44 +23,75 @@
       data-toggle="collapse"
       data-target="#navbarTogglerDemo02"
       aria-controls="navbarTogglerDemo02"
-      aria-expanded="true"
+      aria-expanded="false"
       aria-label="Toggle navigation"
+      style="background-color:transparent;"
     >
       <img src=".././assets/images/menu.png" />
     </button>
 
-    <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav ml-auto">
+    <div class="collapse navbar-collapse navbar-item-padding" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <nuxt-link :to="{ path: '/',hash:'#home'}" class="text-lg active" exact>Home</nuxt-link>
+          <nuxt-link to="/" class="text-lg active" exact>Home</nuxt-link>
+        </li>
+        <!-- <li class="nav-item">
+          <nuxt-link to="/about" exact>About</nuxt-link>
+        </li> -->
+        <li class="nav-item">
+          <nuxt-link to="/service" exact>Services</nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link :to="`/events`" exact>Events</nuxt-link>
+          <nuxt-link to="/price" exact>Plans</nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link :to="{ path: '/',hash:'#about'}" exact>About</nuxt-link>
+          <nuxt-link to="/albums" exact>Albums</nuxt-link>
+        </li>
+         <li class="nav-item">
+          <nuxt-link to="/clients" exact>Clients</nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link :to="{ path: '/',hash:'#contact'}" exact>Contact us</nuxt-link>
+          <nuxt-link to="/contact" exact>Contact us</nuxt-link>
         </li>
       </ul>
-        <div class="text-center btn-col">
-          <nuxt-link to="/signIn">
-            <md-button class="md-raised md-primary btn-color">Sign in</md-button>
-          </nuxt-link>
+      <div class="text-center btn-col">
+        <div class="social_icon text-right">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-    </div> -->
+        <!-- <nuxt-link> -->
+        <!-- <md-button class="md-raised md-primary btn-color">Sign in</md-button> -->
+        <!-- </nuxt-link> -->
+      </div>
+    </div>
   </nav>
 </template>
 
 <style scoped>
-
 .navbar-brand {
   padding: 0;
 }
 .navbar-brand span.logo-text {
   font-size: 1.5em;
   color: #000;
+}
+.navbar-brand a:hover {
+  text-decoration: none;
 }
 nav {
   display: flex;
@@ -122,7 +158,7 @@ nav {
 }
 .navbar .nuxt-link-active,
 .navbar a:hover {
-  color: #c39e4d !important;
+  color: #d21c5e !important;
   font-weight: 500;
   text-decoration: none;
 }
@@ -141,6 +177,7 @@ nav {
   justify-content: center;
 }
 .nav-logo-img {
+  margin-top: 20px;
 }
 nav.shrink .nav-logo-img {
 }
@@ -161,7 +198,7 @@ nav ul li:not(:first-of-type) {
 }
 .btn-color {
   /* background-color: #000; */
-  background-color: #a87c34 !important;
+  /* background-color: #a87c34 !important; */
   color: #fff;
   font-weight: bold;
   min-width: 100px;
@@ -226,6 +263,61 @@ nav ul li:not(:first-of-type) {
   top: -5px;
   font-size: 12px;
 }
+.navbar-brand:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 410px;
+  height: 410px;
+  background: #d21c5e;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  left: 2%;
+  top: 2%;
+}
+.img-large {
+  display: none;
+  width: 120px;
+  position: relative;
+  left: -60px;
+}
+.img-small {
+  display: inline-block;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+.social_icon ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.social_icon ul li a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #41393a;
+  font-size: 14px;
+  margin-left: 6px;
+  padding: 0;
+}
+ .img-large {
+    display: inline-block;
+    width: 120px;
+  }
+  .navbar-item-padding{
+    padding-left: 50px;
+  }
 
 @media (max-width: 1050px) and (min-width: 991px) {
   .navbar a {
@@ -261,11 +353,11 @@ nav ul li:not(:first-of-type) {
     border-bottom-color: #999;
     padding: 8px 10px;
   }
-  .navbar .nuxt-link-active,
+  .navbar .navbar-nav .nuxt-link-active,
   .navbar .navbar-nav a:hover,
   .navbar .navbar-nav a:active,
   .navbar .navbar-nav a:focus {
-    background-color: rgba(185, 163, 104, 0.43922);
+    background-color: rgba(211, 29, 94, 0.5);
     color: #fff !important;
     font-weight: 500;
     text-decoration: none;
@@ -277,6 +369,12 @@ nav ul li:not(:first-of-type) {
     } */
   .btn-color {
     margin: 15px 0;
+  }
+   .navbar-item-padding{
+    padding-left: 0px;
+  }
+  .social_icon{
+    padding: 10px 0;
   }
 }
 @media (max-width: 768px) {
@@ -293,6 +391,18 @@ nav ul li:not(:first-of-type) {
     margin-left: 20px;
     margin-top: 15px;
   }
+  .img-large {
+    position: static;
+    left: 0px;
+    width: 100px;
+  }
+  .navbar-brand::after {
+    width: 350px;
+    height: 350px;
+    left: 1%;
+    top: 1%;
+}
+
 }
 @media (max-width: 500px) {
   .navbar-shrink,
@@ -300,10 +410,16 @@ nav ul li:not(:first-of-type) {
     padding: 5px 30px;
   }
 }
-@media (min-width: 992px){
-    .navbar-expand-lg .navbar-toggler {
-        display: block;
-    }
+@media (min-width: 992px) {
+  /* .navbar-expand-lg .navbar-toggler {
+    display: block;
+  } */
+  /* .img-large {
+    display: inline-block;
+  } */
+  /* .img-small {
+    display: none;
+  } */
 }
 @media screen and (min-width: 991px) and (max-width: 1050px) {
   nav ul li {
@@ -315,30 +431,20 @@ nav ul li:not(:first-of-type) {
 <script>
 export default {
   data() {
-    return {
-
-    };
+    return {};
   },
 
   head() {
-    return {
-      
-    };
+    return {};
   },
 
   created() {},
 
-  mounted() {
-    
-  },
+  mounted() {},
 
-  unmounted() {
-  
-  },
+  unmounted() {},
 
-  methods: {
-   
-  },
+  methods: {},
 
   components: {
     // Logo

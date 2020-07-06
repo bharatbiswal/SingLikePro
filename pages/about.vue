@@ -1,6 +1,6 @@
 <template>
 <div>
-<Navbar3 />
+<Navbar />
   <section id="home" class="banner-section">
 	  <div class="banner-section-style">
 		  <img src="../assets/images/quote.png" class="quote-img" alt="img">
@@ -87,7 +87,7 @@ keyboard_arrow_left
 
 
 <script>
-import Navbar3 from '~/components/Navbar3.vue';
+import Navbar from '~/components/Navbar.vue';
 import Vue from "vue";
 import VueMaterial from "vue-material";
 import "vue-material/dist/vue-material.min.css";
@@ -125,7 +125,7 @@ export default {
 
  transition: 'bounce',
   components: {
-    Navbar3
+    Navbar
   }
 };
 </script>

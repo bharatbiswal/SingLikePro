@@ -1,6 +1,6 @@
 <template>
 <div>
-<Navbar3 />
+<Navbar />
   <section id="home" class="banner-section">
     <div class="banner-item bg-overlay">
       <header>
@@ -178,7 +178,7 @@
 </style>
 
 <script>
-import Navbar3 from '~/components/Navbar3.vue';
+import Navbar from '~/components/Navbar.vue';
 import Vue from "vue";
 import VueMaterial from "vue-material";
 import "vue-material/dist/vue-material.min.css";
@@ -193,7 +193,7 @@ export default {
   },
 
   components: {
-    Navbar3
+    Navbar
   }
 };
 </script>

@@ -4,19 +4,19 @@
       <!-- <Logo /> -->
     <!-- Navbar section end -->
     <div class="main-container">
-      <Banner3 />
+      <Banner />
     </div>
   </div>
 </template>
 
 <script>
-import Banner3 from '~/components/Banner3.vue'
+import Banner from '~/components/Banner.vue'
 // import  Logo from '~/components/Logo.vue'
 
 export default {
   components: {
     // Logo,
-    Banner3,
+    Banner,
   },
   data () {
     return {

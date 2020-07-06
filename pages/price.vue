@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar3 style="background-color:#000;" />
+    <Navbar style="background-color:#000;" />
 
     <!-- Begin pricing plan -->
     <section
@@ -135,10 +135,9 @@
           </div>
         </div>
       </div>
-      <img
+      <!-- <img
         src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="
         class="parallax-img animate v-top tt-paroller lazy"
-        <!-- data-src="img/paralax-5.png" -->
         data-paroller-factor="0.18"
         data-paroller-type="foreground"
         alt="bg"
@@ -146,11 +145,10 @@
       <img
         src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="
         class="parallax-img parallax-right v-center anim-delay animate tt-paroller lazy"
-        <!-- data-src="img/paralax-4.png" -->
         data-paroller-factor="0.12"
         data-paroller-type="foreground"
         alt="bg"
-      />
+      /> -->
     </section>
     <!-- End pricing plan -->
   </div>
@@ -522,7 +520,7 @@
 
 
 <script>
-import Navbar3 from "~/components/Navbar3.vue";
+import Navbar from "~/components/Navbar.vue";
 import Vue from "vue";
 import VueMaterial from "vue-material";
 import "vue-material/dist/vue-material.min.css";
@@ -534,7 +532,7 @@ export default {
   },
  transition: 'grow',
   components: {
-    Navbar3
+    Navbar
   }
 };
 </script>
