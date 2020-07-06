@@ -1,6 +1,6 @@
 # SingLikePro
 
-> My cool Nuxt.js project
+> Sing, Analyse, Compare, Improve, Follow, Challenge, Win - Easy
 
 ## Build Setup
 
