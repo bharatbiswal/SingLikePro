@@ -20,7 +20,12 @@
     "nuxt-fontawesome": "^0.4.0",
     "vue-kinesis": "^1.1.5",
     "vue-material": "^1.0.0-beta-14",
-    "vue-sweetalert2": "^3.0.3"
+    "vue-sweetalert2": "^3.0.3",
+    "vue2-flip-countdown": "^0.10.0",
+    "nuxt-lazy-load": "^1.1.9",
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "@nuxtjs/sitemap": "^2.2.0",
+    "vue-browser-detect-plugin": "^0.1.13"
   },
   "devDependencies": {}
 }

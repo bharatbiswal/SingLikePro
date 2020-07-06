@@ -45,6 +45,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/flip-countdown.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -56,6 +57,25 @@ export default {
   */
   modules: [
     ['vue-sweetalert2/nuxt', {}],
+    ['nuxt-lazy-load',{}],
+    ['@nuxtjs/pwa',{}],
+    ['@nuxtjs/sitemap',{
+      hostname: 'https://giftem.net',
+      path: '/sitemap.xml',
+      cacheTime: 1000 * 60 * 60 * 24, // one day
+      trailingSlash: true,
+      gzip: true,
+      exclude: [
+        '/verifyEmail',
+        '/forgotPassword',
+        '/privacy',
+        '/signIn',
+        '/signUp',
+        '/terms',
+        '/admin/**'
+      ]
+    }],
+    ['vue-browser-detect-plugin/nuxt']
   ],
   /*
   ** Build configuration

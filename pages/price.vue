@@ -138,7 +138,7 @@
       <img
         src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="
         class="parallax-img animate v-top tt-paroller lazy"
-        data-src="img/paralax-5.png"
+        <!-- data-src="img/paralax-5.png" -->
         data-paroller-factor="0.18"
         data-paroller-type="foreground"
         alt="bg"
@@ -146,7 +146,7 @@
       <img
         src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="
         class="parallax-img parallax-right v-center anim-delay animate tt-paroller lazy"
-        data-src="img/paralax-4.png"
+        <!-- data-src="img/paralax-4.png" -->
         data-paroller-factor="0.12"
         data-paroller-type="foreground"
         alt="bg"

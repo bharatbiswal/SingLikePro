@@ -38,6 +38,11 @@
                                         <img alt="android app" class="app-store-img" src=".././assets/images/badge/google-playstore.png">
                                     </button>
                                 </div>
+                                <div class="button-sec">
+                                    <no-ssr>
+                                    <flip-countdown deadline="2020-08-15 00:00:00"></flip-countdown>
+                                    </no-ssr>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -47,6 +52,17 @@
         </div>
     </section>
 </template>
+
+<script>
+import Vue from "vue";
+import FlipCountdown from 'vue2-flip-countdown';
+
+export default {
+    components: {
+        FlipCountdown
+    },
+}
+</script>
 
 
 <style scoped>
