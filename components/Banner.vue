@@ -8,12 +8,12 @@
                 <div class="left-text-style">
                     <h3>Sing Like Pro</h3>
                 </div>
-                <div class="right-arrow-style">
+                <!-- <div class="right-arrow-style">
                     <nuxt-link to="/about" class="sing_right">
                         Click to Enter
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                     </nuxt-link>
-                </div>
+                </div> -->
                 <div class="container main-container">
                     <div class="row text-md-left">
                         <div class="col-md-10 col-xl-7 col-sm-12 col-xs-12">
@@ -38,13 +38,16 @@
                                         <img alt="android app" class="app-store-img" src=".././assets/images/badge/google-playstore.png">
                                     </button>
                                 </div>
-
+                                <div class="powered-view-style">
+                                    <p class="power-text" @click="goToMobionaUrl()">powered by <span class="mobiona_name">mobiona</span></p>
+                                </div>
                             </div>
                                 <div class="countdown-sec">
                                     <client-only>
                                         <flip-countdown deadline="2020-08-15 00:00:00"></flip-countdown>
                                     </client-only>
                                 </div>
+                                
                         </div>
                     </div>
                 </div>
@@ -67,6 +70,11 @@ export default {
 
 
 <style scoped>
+    @font-face {
+        font-family: 'Denmark'; /*a name to be used later*/
+        src: url('../assets/fonts/denmark/films.denmark-webfont.woff2'); /*URL to font*/
+        font-display: swap;
+    }
     .banner-section{
         background-color: #000 !important;
     }
@@ -85,7 +93,7 @@ export default {
         background-size: calc(100% + 50px);
     }
     .offer-box .paunch-line-style{
-        font-size: 80px;
+        font-size: 75px;
         text-transform: uppercase;
         margin: 20px 0;
         font-family: 'Monoton', cursive;
@@ -159,7 +167,7 @@ export default {
    
     /* @media (min-width: 1200px){ */
         .row-padding {
-            margin-top: 20px;
+            margin-top: 10px;
         }
     /* } */
     @keyframes slideInFromLeft {
@@ -252,6 +260,29 @@ export default {
     color: #fff !important;
     z-index: 5;
 }
+    /* .power-text a{
+        color: #eee!important;
+        cursor: pointer;
+        font-weight: 400;
+    } */
+   
+    p.power-text{
+        margin: 0;
+        text-align: center;
+        cursor: pointer;
+        color: #eee!important;
+    }
+    .mobiona_name {
+        font-size: 1.4em;
+        font-family: 'Denmark';
+        color: #e8820a;
+
+    }
+    .powered-view-style{
+        position: absolute;
+        right: 100px;
+        bottom: -40px;
+    }
 
 @media (max-width:1200px) {
     .countdown-sec{
@@ -315,7 +346,7 @@ export default {
         display:none;
     }
     .countdown-sec{
-       bottom: -30px;
+        bottom: -30px;
         left: 0;
     }
 }
@@ -348,8 +379,15 @@ export default {
     }
     .countdown-sec{
         position: static;
-        margin-top: 50px;
+        margin-top: 40px;
     }
+    .powered-view-style{
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -40px;
+    }
+    
 }
 
 @media (max-width: 576px) {
@@ -395,9 +433,6 @@ export default {
 
   head() {
     return {
-    //   css: [
-    //     { src: '~assets/css/style.css'}
-    //   ],
       script:[
           {
             type: "module",
@@ -436,7 +471,12 @@ export default {
         this.$swal({
             text: "Coming Soon !"
         });
-    }
+    },
+
+     goToMobionaUrl(){
+          const url = 'https://mobiona.com';
+            window.open(url, '_blank');
+      }
   },
 
   components: {
